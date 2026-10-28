@@ -123,6 +123,30 @@ a:focus-visible,button:focus-visible{outline:3px solid #a8edff;outline-offset:4p
 @media(max-width:660px){.hp-compact .hp-content{padding:20px}.hp-card-buttons{flex-direction:column;align-items:stretch}.hp-expand,.hp-card-buttons .hp-actions,.hp-card-buttons .hp-link{width:100%;justify-content:center}.hp-step{padding:12px}}
 
 .manual-preview{background:#f1f6fd;color:#153456;border-radius:12px;overflow:hidden;border:1px solid #cddcf1}.manual-head{background:#fff;padding:13px 16px;font-size:14px;font-weight:900;color:#1261df}.manual-head small{margin-left:12px;font-size:11px;color:#38527b}.manual-hero{text-align:center;padding:25px 15px;background:#e3efff}.manual-hero small{color:#3473d5;font-size:11px}.manual-hero h4{font-size:22px;margin:7px 0}.manual-hero p{font-size:12px!important;color:#526b8c!important;min-height:0!important}.manual-search{border-radius:30px;background:white;border:1px solid #bad0f1;margin:15px auto 0;max-width:360px;padding:12px 16px;text-align:left;font-size:12px;color:#7184a2}.manual-categories{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;padding:15px}.manual-categories span{padding:12px 4px;text-align:center;background:#fff;border:1px solid #cedef2;border-radius:9px;font-size:10px;font-weight:800;color:#2364c1}.manual-lesson{padding:19px;background:#163c70;border-radius:12px;margin:0 15px 15px;color:white}.manual-lesson small{font-size:10px;color:#a6d4ff}.manual-lesson strong{display:block;font-size:17px;margin:6px 0}.manual-lesson p{font-size:12px!important;color:#dcecff!important;min-height:0!important;margin:0!important}.manual-note{font-size:12px!important;color:#b9c4d9!important;min-height:0!important}@media(max-width:660px){.manual-categories{grid-template-columns:repeat(3,1fr)}}
+
+/* Project detail modal: independent cards with no grid row stretching */
+.hp-grid{align-items:start!important}.hp-compact{align-self:start!important;min-height:235px}.hp-compact .hp-content{min-height:235px!important}
+.hp-compact .hp-detail{display:none!important}
+.portfolio-modal[hidden]{display:none!important}
+.project-modal-open{overflow:hidden}
+.portfolio-modal{position:fixed;z-index:10000;inset:0;display:flex;align-items:center;justify-content:center;padding:22px}
+.portfolio-modal-backdrop{position:absolute;inset:0;background:rgba(3,7,21,.82);backdrop-filter:blur(7px)}
+.portfolio-modal-panel{position:relative;z-index:1;width:min(960px,100%);max-height:min(90dvh,900px);overflow-y:auto;overscroll-behavior:contain;background:#131b31;color:#f3f5ff;border:1px solid #6972ad;border-radius:22px;box-shadow:0 35px 95px rgba(0,0,0,.55);padding:0 30px 30px;outline:none}
+.portfolio-modal-header{position:sticky;top:0;z-index:3;background:#131b31;display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid rgba(194,202,255,.18);padding:25px 0 18px}
+.portfolio-modal-header h2{font-size:clamp(22px,3vw,32px);margin:4px 0 0;line-height:1.3;letter-spacing:-.035em}
+.portfolio-modal-label{font-size:11px;letter-spacing:.15em;color:#9ee7d7;font-weight:800}
+.portfolio-modal-close{flex:none;min-height:44px;background:#25304f;color:#fff;border:1px solid #67739f;border-radius:11px;padding:9px 15px;cursor:pointer}
+.portfolio-modal-body{padding-top:22px}
+.portfolio-modal-summary{font-size:16px!important;line-height:1.8!important;color:#dce5f6!important;margin:0 0 18px}
+.portfolio-modal-detail{display:block!important;border:0!important;margin:0!important;padding:0!important}
+.portfolio-modal-detail .hp-preview{width:100%;max-height:470px;aspect-ratio:16/9;overflow:hidden;background:#1b2946}
+.portfolio-modal-detail .hp-preview img{object-fit:contain}
+.portfolio-modal-detail .hp-detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:19px}
+.portfolio-modal-detail .hp-step{padding:17px}
+.portfolio-modal-detail .hp-step p{font-size:15px!important}
+.portfolio-modal-site{display:inline-flex;margin-top:22px;align-items:center;justify-content:center;min-height:46px}
+.portfolio-modal .manual-preview{max-width:720px;margin:0 auto}
+@media(max-width:660px){.portfolio-modal{padding:0}.portfolio-modal-panel{width:100%;height:100dvh;max-height:100dvh;border:0;border-radius:0;padding:0 18px 28px}.portfolio-modal-header{padding:18px 0 14px}.portfolio-modal-close{padding:9px 12px}.portfolio-modal-detail .hp-detail-grid{grid-template-columns:1fr}.portfolio-modal-detail .hp-preview{max-height:none}.hp-compact,.hp-compact .hp-content{min-height:215px!important}}
 </style><style>.hp-banner{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:30px;border-radius:22px;border:1px solid #96a2ff46;background:linear-gradient(105deg,#24264c,#0f2336);margin-bottom:24px}.hp-banner h3{font-size:24px;margin:12px 0 8px}.hp-banner p{font-size:13px;color:#c6cce2;margin:0;max-width:760px}.hp-banner .btn{flex:none}.hp-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.hp-item{overflow:hidden;border:1px solid var(--line);border-radius:22px;background:#111627;transition:.3s}.hp-item:hover{border-color:#a6b6ff80;transform:translateY(-5px)}.hp-preview{aspect-ratio:16/9;background:#172137;overflow:hidden;display:flex;align-items:center;justify-content:center}.hp-preview img{width:100%;height:100%;object-fit:cover;object-position:top}.hp-content{padding:23px}.hp-status{font-size:10px;letter-spacing:.14em;font-weight:900;color:#75e6d3}.hp-content h3{font-size:20px;margin:10px 0;letter-spacing:-.04em}.hp-content p{font-size:13px;color:#bfc7dd;min-height:75px}.hp-link{display:inline-flex;border-radius:10px;background:linear-gradient(100deg,#b5a2ff,#7dcfff);padding:10px 14px;color:#0b0d21;font-weight:900;font-size:12px}.hp-meta{font-size:11px;color:#a9b7d5}.hp-actions{margin-top:17px}.hp-typography{align-items:flex-start;flex-direction:column;padding:28px;background:radial-gradient(circle at 80% 40%,#345d93 0,transparent 40%),linear-gradient(130deg,#1e254d,#0a2738)}.hp-typography span{font-size:10px;letter-spacing:.18em;color:#95ceff;font-weight:800}.hp-typography strong{font-size:clamp(29px,4vw,47px);letter-spacing:-.06em;line-height:1.18}.hp-typography small{color:#c6d5ef;font-size:11px}.hp-monibot{gap:23px;background:radial-gradient(circle at 75% 20%,#453567,#142038 55%,#0c162c)}.hp-monibot-logo{display:grid;place-items:center;width:85px;height:85px;border-radius:25px;background:linear-gradient(135deg,#9b82ff,#67e7f2);font-size:50px;font-weight:900;color:#102038;box-shadow:0 20px 45px #0006}.hp-monibot strong{display:block;font-size:29px;letter-spacing:.07em}.hp-monibot small{display:block;max-width:190px;font-size:11px;color:#b9c5de}.hp-disclaimer{text-align:center;font-size:11px;color:#8795b2;margin-top:20px}@media(max-width:750px){.hp-grid{grid-template-columns:1fr}.hp-banner{flex-direction:column;align-items:start}.hp-content p{min-height:0}}</style><meta property="og:type" content="website"/>
 <meta property="og:site_name" content="LEE DAWON Portfolio"/>
 <meta property="og:locale" content="ko_KR"/>
@@ -145,10 +169,55 @@ a:focus-visible,button:focus-visible{outline:3px solid #a8edff;outline-offset:4p
 <section class="content" id="mindset"><div class="container"><div class="section-head reveal"><div><span class="eyebrow">06 / MY APPROACH</span><h2>문제를 발견하고,<br/><span class="gradient-text">빠르게 실행하는 방식</span></h2></div></div><div class="writing"><article class="quote-card reveal"><div class="quote">“</div><h3>책임감 있는 실행</h3><p>업무 중 반복되거나 비효율적인 부분을 발견하면 우선순위를 정해 바로 개선을 시도합니다. 짧은 기간에도 여러 업무 도구를 기획·제작하며 실행한 내용을 확인하고 수정해 왔습니다. 업무 시작 전 우선순위를 정하고, 진행 과정과 결과를 기록하며 누락을 줄이기 위해 노력합니다.</p></article><article class="quote-card reveal"><div class="quote">“</div><h3>빠른 적응과 꾸준한 개선</h3><p>새로운 업무를 접하면 먼저 전체 흐름과 목적을 이해하려고 합니다. 메모와 체크리스트로 반복 업무를 정리하고, 정확성과 속도를 함께 높이는 방향으로 일하는 방식을 개선하고 있습니다.</p></article><article class="quote-card reveal"><div class="quote">“</div><h3>소통을 통한 협업</h3><p>현장 운영과 고객 응대 경험을 통해 서로 다른 입장과 상황을 고려해 소통하는 법을 배웠습니다. 필요한 정보를 명확하게 정리해 전달하고, 유관 업무가 자연스럽게 이어지도록 지원합니다.</p></article><article class="quote-card reveal"><div class="quote">“</div><h3>앞으로의 목표</h3><p>현장과 사무를 함께 경험한 강점을 바탕으로 업무 프로세스를 정확하게 익히고, 자료 관리와 운영 지원의 신뢰도를 높이는 구성원이 되고자 합니다.</p></article></div></div></section>
 <section class="content" id="portfolio-links"><div class="container"><div class="section-head reveal"><div><span class="eyebrow">07 / SELECTED LINKS</span><h2>기록과 콘텐츠를<br/><span class="gradient-text">직접 확인해 보세요</span></h2></div><p>콘텐츠와 프로젝트를 직접 확인할 수 있는 공간입니다.</p></div><div class="links-grid"><a class="link-card reveal" href="https://naver.me/G3Pk8dPd" rel="noopener noreferrer" target="_blank"><div><span class="work-label">PORTFOLIO 01</span><h3>독서행 · 도서 저자</h3><p>이력서에 기재된 외부 포트폴리오 링크</p></div><span class="link-arrow">↗</span></a><a class="link-card reveal" href="https://blog.naver.com/dawon970" rel="noopener noreferrer" target="_blank"><div><span class="work-label">PORTFOLIO 02</span><h3>네이버 독서 블로그</h3><p>독서 콘텐츠 작성 및 정보 정리 활동</p></div><span class="link-arrow">↗</span></a><a class="link-card reveal" href="#projects"><div><span class="work-label">EXPLORE EXPERIENCE</span><h3>업무 경험 아카이브</h3><p>운영·사무·마케팅·품질 업무를 영역별로 확인</p></div><span class="link-arrow">↗</span></a></div></div></section>
 <section class="contact" id="contact"><div class="container reveal"><span class="eyebrow">LET'S CONNECT</span><h2>다음 경험을<br/><span class="gradient-text">함께 만들어갑니다.</span></h2><p>운영관리 · 일반사무 · 행정지원 · 콘텐츠 운영 분야</p><p class="contact-invite">채용 제안이나 협업 문의가 있으시면 편하게 연락해 주세요.</p><div class="actions"><button type="button" class="btn primary contact-reveal-button" id="contactReveal" aria-expanded="false" aria-controls="contactDetails">연락하기 ☎</button><a class="btn ghost" href="#home">처음으로 돌아가기 ↑</a></div><div class="contact-revealed" id="contactDetails" hidden><span>연락처</span><strong>010-9456-4893</strong><a href="tel:01094564893" class="contact-dial">전화 연결 ↗</a></div></div></section></main>
-<footer class="container footer"><div><b style="color:white">DAWON.</b>   © 2026 Lee Dawon. Personal Portfolio.</div><div>Designed with clarity, built with intention.</div></footer><button aria-label="맨 위로 이동" class="to-top" id="toTop">↑</button>
+<div class="portfolio-modal" id="portfolioModal" hidden><div class="portfolio-modal-backdrop" data-close-modal></div><section class="portfolio-modal-panel" role="dialog" aria-modal="true" aria-labelledby="portfolioModalTitle" tabindex="-1"><header class="portfolio-modal-header"><div><span class="portfolio-modal-label">PROJECT DETAIL</span><h2 id="portfolioModalTitle">프로젝트 상세</h2></div><button class="portfolio-modal-close" type="button" aria-label="프로젝트 상세 닫기" data-close-modal>✕ <span>닫기</span></button></header><div id="portfolioModalBody" class="portfolio-modal-body"></div></section></div><footer class="container footer"><div><b style="color:white">DAWON.</b>   © 2026 Lee Dawon. Personal Portfolio.</div><div>Designed with clarity, built with intention.</div></footer><button aria-label="맨 위로 이동" class="to-top" id="toTop">↑</button>
 <script>
-// Independent, accessible project disclosure controls
-for(const button of document.querySelectorAll('.hp-expand')){button.addEventListener('click',()=>{const detail=button.closest('.hp-content').querySelector('.hp-detail');const expanded=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!expanded));detail.hidden=expanded;button.innerHTML=expanded?'프로젝트 전체 보기 <span aria-hidden="true">⌄</span>':'상세 내용 접기 <span aria-hidden="true">⌃</span>';});}
+// Open project details as an accessible modal, without changing card heights.
+const projectModal=document.getElementById('portfolioModal');
+const projectModalPanel=projectModal.querySelector('.portfolio-modal-panel');
+const projectModalBody=document.getElementById('portfolioModalBody');
+const projectModalTitle=document.getElementById('portfolioModalTitle');
+let projectModalTrigger=null;
+function closeProjectModal(){
+  if(projectModal.hidden)return;
+  projectModal.hidden=true;
+  projectModalBody.replaceChildren();
+  document.body.classList.remove('project-modal-open');
+  if(projectModalTrigger)projectModalTrigger.focus();
+}
+for(const button of document.querySelectorAll('.hp-expand')){
+  button.setAttribute('aria-haspopup','dialog');
+  button.removeAttribute('aria-expanded');
+  button.addEventListener('click',()=>{
+    const card=button.closest('.hp-item');
+    const heading=card.querySelector('.hp-content h3');
+    const detail=card.querySelector('.hp-detail');
+    if(!heading||!detail)return;
+    projectModalTrigger=button;
+    projectModalTitle.textContent=heading.textContent;
+    const summary=card.querySelector('.hp-summary');
+    projectModalBody.replaceChildren();
+    if(summary){const p=document.createElement('p');p.className='portfolio-modal-summary';p.textContent=summary.textContent;projectModalBody.appendChild(p);}
+    const clone=detail.cloneNode(true);clone.hidden=false;clone.classList.add('portfolio-modal-detail');projectModalBody.appendChild(clone);
+    const site=card.querySelector('.hp-actions a');
+    if(site){const link=site.cloneNode(true);link.classList.add('portfolio-modal-site');projectModalBody.appendChild(link);}
+    projectModal.hidden=false;
+    document.body.classList.add('project-modal-open');
+    projectModalPanel.scrollTop=0;
+    projectModalPanel.focus();
+  });
+}
+projectModal.querySelectorAll('[data-close-modal]').forEach(b=>b.addEventListener('click',closeProjectModal));
+document.addEventListener('keydown',e=>{
+  if(projectModal.hidden)return;
+  if(e.key==='Escape'){e.preventDefault();closeProjectModal();}
+  if(e.key==='Tab'){
+    const nodes=[...projectModalPanel.querySelectorAll('button:not([disabled]),a[href],input:not([disabled])')].filter(n=>n.getClientRects().length);
+    if(!nodes.length){e.preventDefault();return;}
+    const first=nodes[0],last=nodes[nodes.length-1];
+    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+  }
+});
 
 const contactReveal=document.getElementById('contactReveal');
 const contactDetails=document.getElementById('contactDetails');
