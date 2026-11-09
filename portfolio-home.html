@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1020"><meta name="description" content="이다원 | 운영 실무에서 시작한 디지털 프로젝트와 업무 경험">
+<title>이다원 | 홈페이지형 포트폴리오</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#0b1020;--surface:#111a30;--surface2:#182440;--line:#34405a;--text:#eff3ff;--muted:#abb8d2;--accent:#96e6da;--blue:#a9baff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse 60% 48% at 100% 0%,#24335b 0,transparent 85%),radial-gradient(ellipse 55% 45% at 0% 80%,#17313d 0,transparent 80%),var(--bg);font-family:'DM Sans','Noto Sans KR',sans-serif;color:var(--text);line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.shell{width:min(1040px,calc(100% - 44px));margin:auto}.top{height:75px;position:sticky;top:0;z-index:20;background:#0b1020dc;backdrop-filter:blur(20px);border-bottom:1px solid #ffffff18}.topin{height:100%;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{font-size:18px;font-weight:900;letter-spacing:-.05em}.brand span{color:var(--accent)}.topright{display:flex;align-items:center;gap:14px}.orig{font-size:12px;color:#c7d1e8;border:1px solid var(--line);padding:8px 13px;border-radius:100px}.orig:hover{border-color:var(--accent)}.count{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}.rail{height:3px;background:#ffffff0b}.rail span{display:block;height:100%;width:0;background:linear-gradient(90deg,#9ac2ff,#96e6da);transition:width .4s}
+.main{min-height:calc(100svh - 155px);display:flex;align-items:center;padding:38px 0 34px}.scene{width:100%;animation:enter .38s ease both}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.21em;color:var(--accent);text-transform:uppercase}.hero{min-height:67vh;display:flex;flex-direction:column;justify-content:center;position:relative}.hero h1{margin:20px 0;font-size:clamp(48px,8vw,96px);line-height:1.15;font-weight:900;letter-spacing:-.075em}.hero h1 em{color:var(--accent);font-style:normal}.lead{font-size:clamp(17px,2.2vw,23px);font-weight:600;line-height:1.7;max-width:780px}.sub{color:var(--muted);max-width:700px;font-size:14px}.orbs{position:absolute;right:2%;top:6%;border:1px solid #b5d4ff3c;border-radius:50%;width:270px;aspect-ratio:1;pointer-events:none;z-index:-1;box-shadow:0 0 90px #597fb029,inset 0 0 80px #657baf19}
+h2{font-size:clamp(31px,5.5vw,59px);line-height:1.22;letter-spacing:-.055em;margin:13px 0 23px;word-break:keep-all}h3{font-size:22px;margin:0 0 8px}.sectionintro{color:var(--muted);margin:0 0 26px;max-width:760px}.panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.panel,.feature,.resume-item{border:1px solid #ffffff1c;border-radius:22px;background:linear-gradient(145deg,#1a2540e6,#10182ce8);box-shadow:0 18px 45px #0002}.panel{padding:25px}.panel small{color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.08em}.panel h3{font-size:21px;margin-top:10px}.panel p,.resume-item p{font-size:13px;color:var(--muted);margin:8px 0 0;line-height:1.8}.feature{padding:30px;display:grid;grid-template-columns:minmax(0,1fr) minmax(210px,.85fr);gap:30px;align-items:start}.feature h3{font-size:clamp(27px,4vw,43px);line-height:1.3;letter-spacing:-.045em;margin:12px 0}.feature p{color:var(--muted);font-size:15px;word-break:keep-all}.status{display:inline-block;color:#b6f5e9;background:#21433d;padding:5px 12px;border-radius:30px;font-size:12px;font-weight:700}.meta{display:block;margin-top:16px;font-size:13px;color:#c2cdec}.preview{min-height:220px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(135deg,#293e63,#182b43);display:grid;place-items:center}.preview img{display:block;width:100%;max-height:370px;object-fit:contain}.preview.no-img:after{content:'PROJECT / WORK';font-size:12px;letter-spacing:.22em;color:#a8c2da}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.btn{border:1px solid var(--line);border-radius:12px;padding:12px 17px;font-weight:800;font-size:13px;background:#ffffff0b;color:var(--text)}.btn:hover{background:#ffffff1b}.btn.mainbtn{background:var(--accent);color:#092026;border-color:var(--accent)}.btn:disabled{opacity:.4;cursor:not-allowed}.pillrow{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 22px}.pill{border:1px solid #ffffff2b;padding:6px 11px;border-radius:100px;background:#ffffff09;font-size:12px;color:#dce5ff}.pill.active{background:var(--accent);color:#092026;border-color:var(--accent)}.project-meta{font-size:12px;color:var(--muted);margin-bottom:14px}.resume-list{display:grid;gap:12px}.resume-item{padding:20px 24px}.resume-top{display:flex;justify-content:space-between;gap:15px;align-items:start}.resume-top h3{font-size:18px}.resume-top small{color:var(--accent);font-size:11px}.resume-item ul{padding-left:18px;margin:10px 0 0;color:var(--muted);font-size:13px}.detail{margin-top:20px;padding:22px;border:1px solid var(--line);border-radius:18px;background:#10192c;max-height:58vh;overflow:auto}.detail[hidden]{display:none}.detail img{max-width:100%;height:auto;border-radius:12px}.detail p{color:#c5cfe4}.detail strong{color:#fff}.detail .hp-preview{display:flex;justify-content:center}.detail .hp-preview img{max-height:400px;object-fit:contain}.detail .hp-detail{display:block!important}.detail :is(h4,h5){font-size:16px;margin:20px 0 8px}.detail .hp-detail{font-size:13px}.detail *{max-width:100%;overflow-wrap:anywhere}.navfoot{position:sticky;bottom:0;z-index:10;border-top:1px solid #ffffff1a;background:#0b1020f0;backdrop-filter:blur(20px);padding:14px 0}.footin{display:flex;align-items:center;justify-content:space-between;gap:14px}.navleft{display:flex;align-items:center;gap:12px}.navlabel{font-size:12px;color:var(--muted)}.navright{display:flex;gap:9px}.dots{display:flex;gap:7px;align-items:center}.dots button{width:7px;height:7px;border:0;border-radius:99px;background:#586780;padding:0;transition:.2s}.dots button.active{width:25px;background:var(--accent)}.end{text-align:center;min-height:65vh;display:flex;flex-direction:column;justify-content:center;align-items:center}.end h2{font-size:clamp(36px,6vw,65px)}.end .buttons{justify-content:center}.contact-reveal{font-weight:700;margin-top:20px;color:var(--accent)}.empty{border:1px dashed var(--line);padding:24px;border-radius:15px;color:var(--muted)}@keyframes enter{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}@media(max-width:700px){.shell{width:min(100% - 30px,1040px)}.main{padding:27px 0}.panels,.feature{grid-template-columns:1fr}.feature{padding:21px}.preview{min-height:155px}.preview img{max-height:240px}.top{height:65px}.hero{min-height:64vh}.orbs{width:160px}.footin{gap:6px}.navlabel{display:none}.navright .btn{padding:11px 14px}.dots{gap:5px}.dots button{width:6px;height:6px}.dots button.active{width:19px}.resume-top{flex-direction:column;gap:2px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="shell topin"><div class="brand">DAWON<span>.</span> <span style="color:#b4c2e0;font-size:11px;font-weight:500;letter-spacing:0">PORTFOLIO</span></div><div class="topright"><span class="count" id="count">01 / 06</span><a class="orig" href="./index.html">기존 포트폴리오 ↗</a></div></div><div class="rail"><span id="progress"></span></div></header>
+<main class="main"><div class="shell" id="stage" aria-live="polite"></div></main>
+<footer class="navfoot"><div class="shell footin"><div class="navleft"><span class="navlabel" id="sectionLabel">INTRO</span><div class="dots" id="dots"></div></div><div class="navright"><button class="btn" id="prev" type="button">← 이전</button><button class="btn mainbtn" id="next" type="button">다음 →</button></div></div></footer>
+<script>
+const steps=['소개','업무 관점','프로젝트','경력','학습·활동','연락'];
+let step=0, projectIndex=0, items=[], careers=[], activities=[], experiences=[];
+const by=id=>document.getElementById(id);
+const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const label=(s)=>escapeHtml(s);
+function parseArray(src,name){const m=src.match(new RegExp('const '+name+'=\\[([\\s\\S]*?)\\];'));if(!m)return [];try{return Function('"use strict";return ['+m[1]+']')()}catch{return []}}
+async function loadData(){
+ try{
+  const res=await fetch('./index.html',{cache:'no-store'});if(!res.ok)throw Error('원본 페이지 로드 실패');
+  const html=await res.text(),doc=new DOMParser().parseFromString(html,'text/html');
+  items=[...doc.querySelectorAll('.hp-item')].map(card=>({
+   title:card.querySelector('.hp-content h3')?.textContent?.trim()||'프로젝트',
+   summary:card.querySelector('.hp-summary')?.textContent?.trim()||'',
+   status:card.querySelector('.hp-status')?.textContent?.trim()||'프로젝트',
+   meta:card.querySelector('.hp-meta')?.textContent?.trim()||'',
+   url:card.querySelector('.hp-link[href^="https://"],.hp-link[href^="http://"]')?.getAttribute('href')||'',
+   img:card.querySelector('.hp-detail img')?.getAttribute('src')||'',
+   detail:card.querySelector('.hp-detail')?.innerHTML||''
+  })).filter(x=>!/제휴 영업관리/.test(x.title));
+  const inline=html.slice(html.lastIndexOf('<script>')+8,html.lastIndexOf('</script>'));
+  careers=parseArray(inline,'career');activities=parseArray(inline,'education');experiences=parseArray(inline,'experience');
+ }catch(err){by('stage').innerHTML='<p class="empty">원본 프로젝트 데이터를 불러오지 못했습니다. <a href="./index.html" style="text-decoration:underline">기존 포트폴리오 열기</a></p>';}
+ render();
+}
+function panel(small,head,body){return '<div class="panel"><small>'+small+'</small><h3>'+head+'</h3><p>'+body+'</p></div>'}
+function render(){
+ by('count').textContent=String(step+1).padStart(2,'0')+' / '+String(steps.length).padStart(2,'0');
+ by('progress').style.width=((step+1)/steps.length*100)+'%';
+ by('sectionLabel').textContent=steps[step];
+ by('dots').innerHTML=steps.map((name,i)=>'<button type="button" data-step="'+i+'" class="'+(i===step?'active':'')+'" aria-label="'+name+'로 이동" title="'+name+'"></button>').join('');
+ by('prev').disabled=step===0;by('next').textContent=step===steps.length-1?'처음으로 ↺':'다음 →';
+ let h='';
+ if(step===0)h='<section class="scene hero"><div class="orbs"></div><span class="eyebrow">PERSONAL WEBSITE · 2026</span><h1>업무를 이해하고,<br><em>더 나은 방법을 설계합니다.</em></h1><p class="lead">이다원 — 운영관리 · 일반사무 · 디지털 업무개선</p><p class="sub">실무에서 발견한 불편을 정리하고, 검색·안내·기록 과정을 더 간결하게 만드는 도구로 연결해 왔습니다. 아래 ‘다음’을 누르면 한 페이지씩 살펴볼 수 있습니다.</p><div class="buttons"><button class="btn mainbtn" data-jump="2">프로젝트 먼저 보기 ↗</button><a class="btn" href="./index.html">기존 상세 포트폴리오</a></div></section>';
+ if(step===1)h='<section class="scene"><span class="eyebrow">01 / WHAT I DO</span><h2>현장의 일을 이해하고<br>구조적으로 개선합니다.</h2><p class="sectionintro">자동차검사 지원, 운영관리, 문서·데이터 정리, 콘텐츠 활동 등 실제 업무 경험을 바탕으로 필요한 기능을 기획합니다.</p><div class="panels">'+panel('OPERATIONS','업무 운영','법정 자동차검사 일정과 고객 안내, 현황 기록 및 관련 부서와의 협업을 지원합니다.')+panel('DIGITAL WORKFLOW','디지털 업무개선','반복 조회와 수작업을 줄이기 위한 검색·관리·안내 도구를 설계하고 구현합니다.')+panel('DOCUMENTATION','문서와 데이터','업무 기준을 읽기 쉽게 구조화하고 변경사항을 기록해 구성원 간 정보 공유를 돕습니다.')+panel('CONTENT & COMMUNICATION','콘텐츠와 소통','사용자 관점에서 정보 전달 방식과 이용 흐름을 개선합니다.')+'</div></section>';
+ if(step===2){
+  const p=items[projectIndex];
+  h='<section class="scene"><span class="eyebrow">02 / FEATURED PROJECTS</span><h2>프로젝트를 하나씩<br>살펴보세요.</h2><p class="sectionintro">원본 포트폴리오의 프로젝트 설명과 실제 화면을 그대로 연결했습니다. 아래 프로젝트 선택 또는 다음 프로젝트를 이용하세요.</p>';
+  if(items.length){
+   h+='<div class="project-meta">PROJECT '+String(projectIndex+1).padStart(2,'0')+' / '+String(items.length).padStart(2,'0')+'</div><div class="pillrow">'+items.map((x,i)=>'<button type="button" class="pill '+(i===projectIndex?'active':'')+'" data-project="'+i+'">'+label(x.title)+'</button>').join('')+'</div>';
+   h+='<article class="feature"><div><span class="status">'+label(p.status)+'</span><h3>'+label(p.title)+'</h3><p>'+label(p.summary)+'</p><span class="meta">'+label(p.meta)+'</span><div class="buttons">'+(p.url?'<a href="'+escapeHtml(p.url)+'" class="btn mainbtn" target="_blank" rel="noopener noreferrer">사이트 방문 ↗</a>':'')+(p.detail?'<button class="btn" id="detailsToggle" type="button" aria-expanded="false">상세 내용 보기 ↓</button>':'')+'</div></div><div class="preview '+(p.img?'':'no-img')+'">'+(p.img?'<img src="'+escapeHtml(p.img)+'" alt="'+label(p.title)+' 실제 화면" loading="lazy">':'')+'</div></article>';
+   h+='<div class="detail" id="details" hidden></div><div class="buttons" style="justify-content:space-between"><button class="btn" data-project="'+Math.max(0,projectIndex-1)+'" '+(projectIndex===0?'disabled':'')+'>← 이전 프로젝트</button><button class="btn mainbtn" data-project="'+Math.min(items.length-1,projectIndex+1)+'" '+(projectIndex===items.length-1?'disabled':'')+'>다음 프로젝트 →</button></div>';
+  }else h+='<p class="empty">프로젝트 목록을 불러오는 중이거나 원본 데이터가 없습니다. <a href="./index.html">기존 페이지로 이동</a></p>';
+  h+='</section>';
+ }
+ if(step===3)h='<section class="scene"><span class="eyebrow">03 / CAREER</span><h2>업무 경험과 경력</h2><p class="sectionintro">기존 포트폴리오의 경력 기록을 바탕으로 정리했습니다.</p><div class="resume-list">'+(careers.length?careers.map(c=>'<article class="resume-item"><div class="resume-top"><div><h3>'+label(c.company)+'</h3><p>'+label(c.role)+'</p></div><small>'+label(c.period)+'</small></div><ul>'+(c.bullets||[]).map(b=>'<li>'+label(b)+'</li>').join('')+'</ul></article>').join(''):'<p class="empty">경력 자료가 없습니다. 기존 페이지에서 확인해 주세요.</p>')+'</div></section>';
+ if(step===4)h='<section class="scene"><span class="eyebrow">04 / LEARNING & ACTIVITIES</span><h2>학습과 대외활동</h2><p class="sectionintro">교육과 자격, 콘텐츠 활동을 시간순 기록으로 확인할 수 있습니다.</p><div class="resume-list">'+(activities.length?activities.map(a=>'<article class="resume-item"><div class="resume-top"><div><h3>'+label(a.name)+'</h3><p>'+label(a.desc)+'</p></div><small>'+label(a.date)+'</small></div></article>').join(''):'<p class="empty">활동 자료가 없습니다. 기존 페이지에서 확인해 주세요.</p>')+'</div></section>';
+ if(step===5)h='<section class="scene end"><span class="eyebrow">05 / CONTACT</span><h2>함께 일할 기회를<br>기다립니다.</h2><p class="lead">운영관리 · 일반사무 · 행정지원 · 콘텐츠 운영</p><p class="sub">프로젝트의 자세한 설명과 추가 자료는 기존 포트폴리오에서 볼 수 있습니다.</p><div class="buttons"><button class="btn mainbtn" id="contactBtn" type="button">연락처 보기</button><a class="btn" href="./index.html">기존 포트폴리오 열기 ↗</a></div><p class="contact-reveal" id="contactInfo" hidden>010-9456-4893</p></section>';
+ by('stage').innerHTML=h;window.scrollTo({top:0,behavior:'instant'});
+ if(step===2&&items.length){const p=items[projectIndex];const t=by('detailsToggle');if(t)t.onclick=()=>{const d=by('details');const show=d.hidden;d.hidden=!show;t.setAttribute('aria-expanded',String(show));t.textContent=show?'상세 내용 접기 ↑':'상세 내용 보기 ↓';if(show){d.innerHTML=p.detail;d.scrollTop=0}}}
+ if(step===5)by('contactBtn').onclick=()=>{const t=by('contactInfo');t.hidden=!t.hidden};
+ document.querySelectorAll('[data-jump]').forEach(b=>b.onclick=()=>go(+b.dataset.jump));
+ document.querySelectorAll('[data-step]').forEach(b=>b.onclick=()=>go(+b.dataset.step));
+ document.querySelectorAll('[data-project]').forEach(b=>b.onclick=()=>{projectIndex=+b.dataset.project;render()});
+}
+function go(n){step=Math.max(0,Math.min(steps.length-1,n));render();history.replaceState(null,'','#'+(step+1))}
+by('prev').onclick=()=>go(step-1);
+by('next').onclick=()=>go(step===steps.length-1?0:step+1);
+document.addEventListener('keydown',e=>{if(e.target.closest('input,textarea,button,a'))return;if(e.key==='ArrowRight')go(step+1);if(e.key==='ArrowLeft')go(step-1)});
+const initial=Number(location.hash.slice(1));if(Number.isInteger(initial)&&initial>=1&&initial<=steps.length)step=initial-1;
+loadData();
+</script>
+</body></html>
