@@ -40,7 +40,7 @@ async function loadData(){
    img:card.querySelector('.hp-detail img')?.getAttribute('src')||'',
    detail:card.querySelector('.hp-detail')?.innerHTML||''
   })).filter(x=>!/제휴 영업관리/.test(x.title));
-  const inline=html.slice(html.lastIndexOf('<script>')+8,html.lastIndexOf('</script>'));
+  const inline=html.slice(html.lastIndexOf('<script>')+8,html.lastIndexOf('<'+'/script>'));
   careers=parseArray(inline,'career');activities=parseArray(inline,'education');experiences=parseArray(inline,'experience');
  }catch(err){by('stage').innerHTML='<p class="empty">원본 프로젝트 데이터를 불러오지 못했습니다. <a href="./index.html" style="text-decoration:underline">기존 포트폴리오 열기</a></p>';}
  render();
